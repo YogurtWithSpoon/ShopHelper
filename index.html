@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="images/android-chrome-192x192.png" sizes="192x192">
+    <meta name="msapplication-square70x70logo" content="images/smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="images/mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="images/widetile.png" />
+    <meta name="msapplication-square310x310logo" content="images/largetile.png" />
+    <title>Сравнение цен</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app__content">
+        <div class="header__wrapper">
+            <h2 class="header">Сравнение цен продуктов</h2>
+            <button class="button__plus">
+                <i class="fas fa-plus plus"></i>
+            </button>
+        </div>
+        <div class="app">
+            <div class="card">
+                <div class="card__header">
+                    <span>Продукт 1</span>
+                    <button class="button__close">
+                        <i class="fas fa-times close"></i>
+                    </button>
+                </div>
+                <div class="card__content">
+                    <div class="leftside">
+                        <div class="price__wrapper">
+                            <span class="label">Цена: </span>
+                            <input type="text" inputmode="numeric" pattern="[0-9]*" class="price">
+                        </div>
+                        <div class="weight__wrapper">
+                            <span class="label">Вес: </span>
+                            <input type="text" inputmode="numeric" pattern="[0-9]*" class="weight">
+                        </div>
+                    </div>
+                    <div class="rightside">
+                        <div class="total__price">
+                            <span class="result__price">0</span>
+                            <span class="money">копеек</span>
+                        </div>
+                        <div class="total__weight">за единицу</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__header">
+                    <span>Продукт 2</span>
+                    <button class="button__close">
+                        <i class="fas fa-times close"></i>
+                    </button>
+                </div>
+                <div class="card__content">
+                    <div class="leftside">
+                        <div class="price__wrapper">
+                            <span class="label">Цена: </span>
+                            <input type="text" inputmode="numeric" pattern="[0-9]*" class="price">
+                        </div>
+                        <div class="weight__wrapper">
+                            <span class="label">Вес: </span>
+                            <input type="text" inputmode="numeric" pattern="[0-9]*" class="weight">
+                        </div>
+                    </div>
+                    <div class="rightside">
+                        <div class="total__price">
+                            <span class="result__price">0</span> 
+                            <span class="money">копеек</span>
+                        </div>
+                        <div class="total__weight">за единицу</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="clear">Очистить поля</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
